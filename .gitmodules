@@ -1,0 +1,3 @@
+[submodule "kafkaflow"]
+	path = kafkaflow
+	url = ./kafkaflow

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-producer-41e60de6-1684-4870-a447-df8a5a8d4948</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\kafkaflow\src\KafkaFlow\KafkaFlow.csproj" />
+    <ProjectReference Include="..\..\kafkaflow\src\KafkaFlow.Abstractions\KafkaFlow.Abstractions.csproj" />
+    <ProjectReference Include="..\..\kafkaflow\src\KafkaFlow.Serializer.JsonCore\KafkaFlow.Serializer.JsonCore.csproj" />
+    <ProjectReference Include="..\..\kafkaflow\src\KafkaFlow.TypedHandler\KafkaFlow.TypedHandler.csproj" />
+    <ProjectReference Include="..\..\kafkaflow\src\KafkaFlow.Extensions.Hosting\KafkaFlow.Extensions.Hosting.csproj" />
+    <ProjectReference Include="..\..\kafkaflow\src\KafkaFlow.LogHandler.Microsoft\KafkaFlow.LogHandler.Microsoft.csproj" />
+  </ItemGroup>
+</Project>
